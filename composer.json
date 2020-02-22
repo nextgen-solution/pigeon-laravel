@@ -1,0 +1,31 @@
+{
+    "name": "nextgen-solution/pigeon-laravel",
+    "description": "Pigeon Library for Laravel https://pigeon.mycard.in.th",
+    "require": {
+        "nextgen-solution/pigeon-php": "^1.0"
+    },
+    "require-dev": {},
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "NextGenSolution\\Pigeon\\Laravel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tetat Jearuksuwan",
+            "email": "tetat.j@ngs.in.th"
+        }
+    ],
+    "minimum-stability": "beta",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NextGenSolution\\Pigeon\\Laravel\\ServiceProvider"
+            ],
+            "aliases": {
+                "Pigeon": "NextGenSolution\\Pigeon\\Laravel\\Facades\\Pigeon"
+            }
+        }
+    }
+}
